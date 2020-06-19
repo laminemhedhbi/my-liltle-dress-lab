@@ -271,7 +271,7 @@ export default class Accessories extends Component<{}, State> {
     handleChange = (event: any) => {
         const name = event.target.name;
         const value =
-            event.target.type == 'file'
+            event.target.type === 'file'
                 ? event.target.files[0].name
                 : event.target.value;
         this.setState({ [name]: value } as Pick<State, any>);
@@ -282,10 +282,10 @@ export default class Accessories extends Component<{}, State> {
         });
     };
     handlerUpdate = (event: any) => {
-        if (this.state.showUpdate == false) {
+        if (this.state.showUpdate === false) {
             const _id = event.currentTarget.name;
             const accesory = this.state.accessories.find(
-                element => element._id == _id,
+                element => element._id === _id,
             );
             const { name, type, price, imageUrl } = accesory;
             this.setState(prev => {
@@ -352,7 +352,7 @@ export default class Accessories extends Component<{}, State> {
             type: type,
             price: price,
         };
-        if (imageUrl != '') robe.picture = imageUrl;
+        if (imageUrl !== '') robe.picture = imageUrl;
         fetch('https://mylitterdresslab.herokuapp.com/accessory/' + _id, {
             method: 'PUT',
             body: JSON.stringify(robe),

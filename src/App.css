@@ -1,38 +1,465 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.model {
+    width: 30%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+.img {
+    margin-top: 13%;
+    height: 86%;
+    width: 45%;
+    margin-left: 34%;
+}
+
+.dressing {
+    width: 50%;
+    float: right;
+    background-color: black;
+    height: 500px;
+}
+
+.viewall {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.navbar {
+    opacity: 0.5;
+}
+
+#card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.text {
+    font-family: Old Standard TT;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.step {
+    background: rgba(0, 0, 0, 0.12);
+    background-size: cover;
+    background-position: center;
+    min-height: 78vh;
+    overflow-y: auto;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.choose {
+    text-align: left;
+    font-size: 2rem;
+    color: #515151;
+    font-family: Old Standard TT;
+}
+
+.colchoose {
+    height: 50px;
+}
+
+.pchoose {
+    background: rgba(248, 248, 248, 0.49);
+    border-radius: 15%;
+    position: relative;
+    font-family: Old Standard TT;
+    font-weight: bold;
+    font-size: 1.4rem;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 2%;
+}
+
+.Colsignup {
+    justify-content: center;
+    background-color: #edededd9;
+    margin-top: 3%;
+    border-radius: 15px;
+    height: 702px;
+    overflow-y: auto;
+}
+
+.label {
+    margin-left: 29%;
+    margin-top: 0%;
+    margin-bottom: 3%;
+    font-family: Old Standard TT;
+    font-weight: bold;
+    font-size: -webkit-xxx-large;
+}
+
+.rowsignup {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 3%;
+}
+
+.Colsignup2 {
+    justify-content: center;
+    background-image: url('./assets/backSingup.jpg');
+    margin-right: -22%;
+    background-size: cover;
+    background-position: center;
+    margin-top: 3%;
+    border-radius: 15px;
+    opacity: 0.7;
+}
+
+.btngmail {
+    width: 36%;
+    border: transparent;
+
+    height: 100%;
+    background-color: transparent;
+}
+.btnfcb {
+    border: transparent;
+    width: 36%;
+    margin-left: 61%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.quiz {
+    background: rgba(248, 248, 248, 0.49);
+    height: 450px;
+    overflow-y: auto;
+    border-radius: 20px;
+}
+
+.modal {
+    font-family: Old Standard TT;
+    height: 100%;
+}
+
+.pack {
+    width: 100%;
+    font-family: Old Standard TT;
+    background-color: #ffffff33;
+    margin-right: 10%;
+}
+
+.card_pack {
+    font-family: Old Standard TT;
+    height: 550px;
+    overflow-y: auto;
+    margin-top: 7%;
+}
+
+.Remouve {
+    opacity: 0.7;
+    width: 100%;
+}
+
+.Remouve:hover {
+    background: black;
+    background-color: black;
+}
+
+.Remouve:active {
+    position: relative;
+    top: 1px;
+}
+
+.contentDiv {
+    margin-left: 2%;
+    height: 100%;
+    width: 94%;
+}
+
+.select {
+    width: 100%;
+    background-color: burlywood;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.accessory {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    list-style: none;
+}
+
+.accessory1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.filter {
+    margin-top: -3px;
+    font-family: Old Standard TT;
+}
+
+.btnfilter {
+    width: 30%;
+    height: 81%;
+    margin-left: 39%;
+    color: #381919;
+    background-color: #ffffff9c;
+    border-color: #000000;
+}
+
+.logo {
+    width: 60%;
+    margin-right: -52%;
+}
+
+.imgLogo {
+    width: 65px;
+}
+
+.favimg {
+    width: 19%;
+    float: left;
+}
+
+.pack2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    width: 100%;
+    margin-left: 0px;
+}
+
+.lab {
+    background-image: url('./assets/325.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    top: 0;
+    min-height: 100vh;
+    position: absolute;
+    z-index: -100;
+}
+
+.home {
+    background-image: url('./assets/clothes-hanging-3119164.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 86vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btnCreate :hover {
+    margin-left: 44%;
+    margin-top: -27%;
+    background: #000000c4;
+    color: white;
+    height: 63%;
+    width: 19%;
+    border-color: black;
+    font-size: large;
+    font-family: Old Standard TT;
+    font-weight: bold;
+    border-radius: 38px;
+}
+
+.RowPack {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 8%;
+}
+
+.SignIn {
+    background-image: url('./assets/clothes-hanging-3119164.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 735px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0%;
+}
+
+#SignInRow {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    width: 79%;
+    margin-left: 18%;
+}
+.imgcontact {
+    width: 58%;
+    margin-left: -94%;
+    margin-top: -4%;
+    border-radius: 37%;
+    opacity: 0.2;
+}
+.btncreate {
+    background-color: #ffffff8f;
+    color: black;
+    margin-top: -3%;
+    margin-left: -7%;
+    border-radius: 38px;
+    border-color: beige;
+    height: 49%;
+    width: 30%;
+    font-size: large;
+    font-family: Old Standard TT;
+    font-weight: bold;
+}
+.About {
+    background-image: url('./assets/About.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    min-height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.btncreate span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btncreate:hover span {
+    padding-right: 25px;
+}
+
+.btncreate:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.btncreate span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.divPrix {
+    height: 18%;
+    width: 37.93%;
+    background-color: #341212;
+    margin-bottom: -33%;
+    border-radius: 64%;
+    margin-left: 79%;
+    color: white;
+}
+.SelectDress {
+    width: 14rem;
+    height: 20rem;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 80%;
+    border: 14px groove #f7ddc0;
+    background: #ffffff85;
+}
+
+#dress {
+    background: #faebd77a;
+    border: groove 4px;
+    width: 83%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.button {
+    border: none;
+    background: #404040;
+    color: #ffffff !important;
+    width: 108%;
+    text-transform: uppercase;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    font-family: Old Standard TT;
+}
+.button:hover {
+    color: #404040 !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    background: none;
+    font-family: Old Standard TT;
+
+    transition: all 0.3s ease 0s;
+}
+.btncreate:disabled {
+    background-color: #ffffff40;
+    color: #00000052;
+    margin-top: -3%;
+    margin-left: -7%;
+    border-radius: 38px;
+    border-color: #fbfafc;
+    height: 49%;
+    width: 30%;
+    font-size: large;
+    font-family: Old Standard TT;
+    font-weight: bold;
 }
